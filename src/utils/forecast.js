@@ -9,7 +9,7 @@ const forecast = (latitide, longitude, callback) => {
         }else if(body.message){
             callback('Unable to find location', undefined)
         }else{
-            callback(undefined,'Current Temperature: ' + body.main.temp + '°C' +'  Feels like: ' + body.main.feels_like + '°C' + '  Max-Temperature: ' + body.main.temp_max + '°C' + '  Min-Temperature: ' + body.main.temp_min + '°C' + '  Humidity: ' + body.main.humidity + '%' + '  Pressure: ' + body.main.pressure + ' hpa')
+            callback(undefined,'Current Temperature: ' + body.main.temp + '°C' +'  Feels like: ' + body.main.feels_like + '°C' + '  Max-Temperature: ' + body.main.temp_max + '°C' + '  Min-Temperature: ' + body.main.temp_min + '°C' + '  Humidity: ' + body.main.humidity + '%' + '  Pressure: ' + body.main.pressure + ' hpa.')
         }
     })
 }
